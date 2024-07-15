@@ -244,7 +244,7 @@ function ProductList() {
             </div>
 
             <div className="product-grid">
-                {plantsArray.forEach(category => (
+                {plantsArray.map(category => (
                     category.plants.map(plant => (
                         <div key={plant.name} className="plant-card">
                             <h3>{plant.name}</h3>
